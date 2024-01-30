@@ -11,7 +11,7 @@
     <div class="personal-info-page">
         <div class="personal-info-header">
             <div class="col-2">
-                <h3>Cập nhật hồ sơ</h3>
+                <h3>Cập nhật hồ sơ ne2</h3>
             </div>
             <div class="col-10 button-container">
                 <!--button-->
