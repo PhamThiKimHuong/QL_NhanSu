@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HRM" Class="NhanSuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.162.16.247;Initial Catalog=HRM;User ID=HRM" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="MaNV" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MST" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NgSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NoiSinh" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="QueQuan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="HoKhauTT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ChoOHienTai" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DanToc" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TonGiao" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="QuocTich" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

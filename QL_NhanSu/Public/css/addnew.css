@@ -1,0 +1,117 @@
+﻿* {
+    font-family: 'Segoe UI', Helvetica, Tahoma, sans-serif;
+}
+
+.personal-info-page {
+    margin: 20px;
+}
+
+.text-center {
+    text-align: left !important;
+}
+/*----------header----------*/
+.personal-info-header {
+    display: flex;
+    padding: 20px 0px;
+}
+
+    .personal-info-header .col-2 {
+        text-align: left;
+    }
+
+/*-------------left------------*/
+/*.col-left-personal-info {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/ /* Đổ bóng với màu đen, độ mờ là 0.1 */
+    /*margin-right: 5px;
+    margin-left: 20px;
+    width: 13% !important;
+}*/
+
+
+/*----------right-----------*/
+/*.col-right-personal-info {
+    margin-left: 5px;
+    padding-right: 0px;
+    width: 84%;
+}*/
+/*--image--*/
+.img {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*info*/
+.info-container{
+    display: flex;
+}
+.personal-info {
+    margin: 20px 0px 0px 0px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.body-info {
+    padding: 20px;
+}
+.personal-info h4{
+    text-align: left;
+}
+/*Menu*/
+.menu-container {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#vertical-menu {
+    padding-top: 20px;
+}
+
+    #vertical-menu a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+        #vertical-menu a:hover {
+            background-color: #ddd;
+        }
+.employee-id .label, .full-name .label, .tax-id .label, .gende .label,
+.birthdate .label, .birthplace .label, .hometown .label, .permanent_address .label,
+.current_residence .label, .person_ethnicity .label, .religion .label, .nationality .label, .phone_number .label,
+.email .label, .status .label {
+    width: 200px;
+    text-align: left;
+    font-size: 18px !important;
+}
+.employee-id, .full-name, .tax-id, .gende, .birthdate, .birthplace, .hometown, .permanent_address,
+.current_residence, .person_ethnicity, .religion, .nationality, .phone_number, .email, .status {
+    font-size: 18px !important;
+    display: flex;
+    padding: 15px;
+}
+input[type="text"].dxeEditAreaSys{
+    font-size: 18px;
+}
+tr{
+    font-size: 18px;
+}
+
+/*button*/
+.personal-info-header .button-container{
+    text-align: end;
+}
+.dxbButton {
+    background: #ffffff;
+    border: 2px solid #9F9F9F;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0px 0px 10px;
+    padding: 5px;
+}

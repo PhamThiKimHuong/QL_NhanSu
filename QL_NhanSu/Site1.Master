@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="QL_NhanSu.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Public/css/menu.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row g-0">
+        <div class="<%--col-6--%> col-md-2">
+            <%-------------------Herder-------------------%>
+            <div class="toggle-menu">
+                <span>
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </div>
+            <nav class="sidebar">
+                <div class="logo">
+                    <a>
+                        <img src="../Public/img/LogoDNC.png" />
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="NhanSu.aspx">
+                        <ion-icon name="person-circle"></ion-icon>
+                        Hồ sơ</a></li>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="document-text"></ion-icon>
+                        Hợp đồng </a></li>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="person-add"></ion-icon>
+                        Bổ nhiệm</a></li>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="person-remove"></ion-icon>
+                        Miễn nhiệm</a></li>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="repeat"></ion-icon>
+                        Thuyên chuyển</a></li>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="time"></ion-icon>
+                        Chấm công</a></li>
+                    <%-------------------------------------------------------------------%>
+                    <div class="menu-container">
+                        <li><a href="#" class="feat-btn">
+                            <ion-icon name="grid"></ion-icon>
+                            Phòng ban 
+          <span class="chevron">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+          </span>
+                        </a>
+                            <ul class="feat-show">
+                                <li><a>PHÒNG TVTS & TRUYỀN THÔNG</a></li>
+                                <li><a>PHÒNG QUẢN LÝ ĐÀO TẠO</a></li>
+                                <li><a>PHÒNG NGHIÊN CỨU KHOA HỌC</a></li>
+                                <li><a>PHÒNG TỔ CHỨC-HÀNH CHÍNH</a></li>
+                                <li><a>PHÒNG TÀI CHÍNH-KẾ HOẠCH</a></li>
+                                <li><a>PHÒNG QUẢN TRỊ THIẾT BỊ</a></li>
+                                <li><a>PHÒNG CTCT-QLSV</a></li>
+                                <li><a>PHÒNG KHẢO THÍ-ĐBCLGD</a></li>
+                                <li><a>PHÒNG CÔNG NGHỆ THÔNG TIN</a></li>
+                                <li><a>BAN HỢP TÁC QUỐC TẾ</a></li>
+                                <li><a>BAN QUẢN LÝ KHU E</a></li>
+                                <li><a>BAN THANH TRA</a></li>
+                                <li><a>BAN XÂY DỰNG</a></li>
+                            </ul>
+                        </li>
+                        <!-- Thêm các mục khác tùy vào nhu cầu của bạn -->
+                    </div>
+                    <%-------------------------------------------------------------------%>
+                    <li><a href="#" class="serv-btn">
+                        <ion-icon name="pricetags"></ion-icon>
+                        Trung tâm 
+                        <span class="chevron1">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </span>
+                    </a>
+                        <ul class="serv-show">
+                            <li><a>TT ĐÀO TẠO CĐR & PTNNL</a></li>
+                            <li><a>TT HỖ TRỢ SINH VIÊN-HỢP TÁC DOANH NGHIỆP</a></li>
+                            <li><a>TT PHÁT TRIỂN VÀ ỨNG DỤNG PHẦN MỀM DNC</a></li>
+                        </ul>
+                    </li>
+                    <%--------------------------------------------------------------------%>
+
+                    <div class="menu-container">
+                        <li><a href="#" class="serv-btn1">
+                            <ion-icon name="school"></ion-icon>
+                            Khoa 
+        <span class="chevron-down">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+                        </a>
+                            <!-- Các mục trong menu -->
+                            <ul class="serv-show1">
+                                <li><a>KHOA Y</a></li>
+                                <li><a>KHOA DƯỢC</a></li>
+                                <li><a>KHOA KINH TẾ</a></li>
+                                <li><a>KHOA QTKD-MARKETING</a></li>
+                                <li><a>KHOA LUẬT</a></li>
+                                <li><a>KHOA CƠ BẢN</a></li>
+                                <li><a>KHOA KỸ THUẬT CÔNG NGHỆ</a></li>
+                                <li><a>KHOA CÔNG NGHỆ THÔNG TIN</a></li>
+                                <li><a>KHOA CƠ KHÍ ĐỘNG LỰC</a></li>
+                                <li><a>KHOA KIẾN TRÚC-XÂY DỰNG & MT</a></li>
+                                <li><a>KHOA DU LỊCH VÀ QTNH-KS</a></li>
+                                <li><a>KHOA ĐÀO TẠO THƯỜNG XUYÊN</a></li>
+                                <li><a>KHOA SAU ĐẠI HỌC</a></li>
+                                <li><a>KHOA GD QUỐC PHÒNG-AN NINH</a></li>
+                            </ul>
+                        </li>
+                        <!-- Thêm các mục khác tùy vào nhu cầu của bạn -->
+                    </div>
+
+                    <%---------------------------------------------------------------------%>
+                    <li><a href="#">
+                        <ion-icon name="ticket"></ion-icon>
+                        Phúc lợi</a>
+                        <ul>
+                            <li><a></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <ion-icon name="ribbon"></ion-icon>
+                        Khen thưởng</a></li>
+                    <%----------------------------------------------------------------------%>
+                </ul>
+            </nav>
+            <script>
+                $('.toggle-menu').click(function () {
+                    $(this).toggleClass("click");
+                    $('.sidebar').toggleClass("show");
+                });
+                $('.feat-btn').click(function () {
+                    $('nav ul .feat-show').toggleClass("show");
+                    $('nav ul .chevron').toggleClass("rotate");
+                });
+                $('.serv-btn').click(function () {
+                    $('nav ul .serv-show').toggleClass("show1");
+                    $('nav ul .chevron1').toggleClass("rotate");
+                });
+                $('.serv-btn1').click(function () {
+                    $('nav ul .serv-show1').toggleClass("show2");
+                    $('nav ul .chevron-down').toggleClass("rotate");
+                });
+                $('nav ul li').click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            </script>
+        </div>
+       
+        <div class="<%--col-sm-6--%> col-md-10">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </form>
+</body>
+</html>

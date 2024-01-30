@@ -1,0 +1,116 @@
+﻿.home-page {
+    margin: 20px;
+}
+
+.gridview_db {
+    /* border: #808080;*/
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gridview-body {
+    max-width: 100%;
+    overflow-x: auto;
+}
+/*header*/
+.home-header h3 {
+    text-align: left !important;
+    padding: 20px 0;
+}
+.addnew_container{
+    margin: 20px 0px;
+    text-align: right;
+}
+/*left*/
+.col-left {
+    display: flex;
+}
+
+/*right*/
+.col-right {
+    display: flex;
+    justify-content: end;
+}
+
+
+/*tìm kiếm */
+.search-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#searchButton {
+    background-color: #9F9F9F;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.gridview-container {
+    border: 1px solid #808080;
+    padding-right: -20px; /* Thêm khoảng trống bên phải khi cuộn ngang */
+/*    overflow-x: auto;*/
+}
+
+/*gridview*/
+.dxeButtonEdit {
+    padding: 10px;
+    margin: 15px 0;
+    font: 16px Tahoma, Geneva, sans-serif;
+}
+.dxgvControl {
+    border: none;
+}
+
+.dxgvHeader {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.dxgvDataRow td.dxgv {
+    text-align: center !important;
+    font-size: 16px;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.dxgvPagerBottomPanel {
+    text-align: left;
+}
+.dxgvSelectedRow {
+    background-color: #DCDCDC;
+    color: black;
+}
+.dxgvControl{
+    background: #DCDCDC;
+
+}
+
+/*button*/
+.dxbButton {
+    background: #ffffff;
+    border: 2px solid #9F9F9F;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0px 0px 10px;
+    padding: 5px;
+}
+
+/*------------------------*/
+
