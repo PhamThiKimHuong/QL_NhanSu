@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href="NhanSu.aspx">
+                    <li><a href="/NhanSu">
                         <ion-icon name="person-circle"></ion-icon>
                         Hồ sơ</a></li>
                     <%-------------------------------------------------------------------%>

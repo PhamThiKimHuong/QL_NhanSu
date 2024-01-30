@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="NhanSu\AddNew.aspx" />
+    <Content Include="NhanSu\Default.aspx" />
     <Content Include="NhanSu\Edit.aspx" />
     <Content Include="NhanSu\NhanSu.aspx" />
     <Content Include="Public\css\addnew.css" />
@@ -141,12 +142,12 @@
     <Content Include="Public\css\nhansu.css" />
     <Content Include="Public\img\LogoDNC.png" />
     <Content Include="Public\js\nhansu.js" />
-    <Content Include="NhanSu.dbml">
+    <Content Include="DataSourceDBML\NhanSu.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>NhanSu.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="NhanSu.dbml.layout">
+    <None Include="DataSourceDBML\NhanSu.dbml.layout">
       <DependentUpon>NhanSu.dbml</DependentUpon>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -212,7 +213,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="NhanSu.designer.cs">
+    <Compile Include="Models\NhanSu.cs" />
+    <Compile Include="DataSourceDBML\NhanSu.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NhanSu.dbml</DependentUpon>
@@ -223,6 +225,13 @@
     </Compile>
     <Compile Include="NhanSu\AddNew.aspx.designer.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NhanSu\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NhanSu\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="NhanSu\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>

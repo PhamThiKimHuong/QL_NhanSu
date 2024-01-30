@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QL_NhanSu
+namespace QL_NhanSu.DataSourceDBML
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -30,9 +30,9 @@ namespace QL_NhanSu
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertNHANVIEN(NHANVIEN instance);
-    partial void UpdateNHANVIEN(NHANVIEN instance);
-    partial void DeleteNHANVIEN(NHANVIEN instance);
+    partial void InsertNHANSU(NHANSU instance);
+    partial void UpdateNHANSU(NHANSU instance);
+    partial void DeleteNHANSU(NHANSU instance);
     #endregion
 		
 		public NhanSuDataContext() : 
@@ -65,22 +65,22 @@ namespace QL_NhanSu
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<NHANVIEN> NHANVIENs
+		public System.Data.Linq.Table<NHANSU> NHANSUs
 		{
 			get
 			{
-				return this.GetTable<NHANVIEN>();
+				return this.GetTable<NHANSU>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NHANVIEN")]
-	public partial class NHANVIEN : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NHANSU")]
+	public partial class NHANSU : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaNV;
+		private string _MaNS;
 		
 		private string _HoTen;
 		
@@ -116,8 +116,8 @@ namespace QL_NhanSu
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaNVChanging(string value);
-    partial void OnMaNVChanged();
+    partial void OnMaNSChanging(string value);
+    partial void OnMaNSChanged();
     partial void OnHoTenChanging(string value);
     partial void OnHoTenChanged();
     partial void OnMSTChanging(System.Nullable<int> value);
@@ -150,27 +150,27 @@ namespace QL_NhanSu
     partial void OnTrangThaiChanged();
     #endregion
 		
-		public NHANVIEN()
+		public NHANSU()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="NVarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaNV
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="MaNS", Storage="_MaNS", DbType="NVarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaNS
 		{
 			get
 			{
-				return this._MaNV;
+				return this._MaNS;
 			}
 			set
 			{
-				if ((this._MaNV != value))
+				if ((this._MaNS != value))
 				{
-					this.OnMaNVChanging(value);
+					this.OnMaNSChanging(value);
 					this.SendPropertyChanging();
-					this._MaNV = value;
-					this.SendPropertyChanged("MaNV");
-					this.OnMaNVChanged();
+					this._MaNS = value;
+					this.SendPropertyChanged("MaNS");
+					this.OnMaNSChanged();
 				}
 			}
 		}

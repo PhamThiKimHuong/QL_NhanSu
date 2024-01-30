@@ -31,7 +31,7 @@ namespace QL_NhanSu.NhanSu
 
         protected void btn_cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("NhanSu.aspx");
+            Response.Redirect("/NhanSu");
         }
 
 

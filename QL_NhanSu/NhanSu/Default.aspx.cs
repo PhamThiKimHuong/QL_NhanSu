@@ -1,15 +1,15 @@
 ﻿using QL_NhanSu.DataSourceDBML;
-using QL_NhanSu.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using QL_NhanSu.Models;
 
 namespace QL_NhanSu.NhanSu
 {
-    public partial class NhanSu : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,12 +46,10 @@ namespace QL_NhanSu.NhanSu
                 return nhanVienList;
             }
         }
-        
-        protected void addnewClick(object sender, EventArgs e)
+                protected void addnewClick(object sender, EventArgs e)
         {
             // Chuyển hướng (redirect) tới trang AddNew.aspx
             Response.Redirect("AddNew.aspx");
         }
-
     }
 }
